@@ -7,6 +7,8 @@ class Testscanning(unittest.TestCase):
         headers = 'Mobile'
         self.assertEqual(status_code, '200')
         self.assertEqual(headers, 'Mobile')
+
+
 class TestScraping(unittest.TestCase):
     def test_Scraping(self):
         filetype = '.jpg'

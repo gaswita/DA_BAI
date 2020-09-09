@@ -9,20 +9,19 @@ class Scanning:
         'User-Agent': 'Mobile'     #header spoofing
     }
 
-    url = 'http://172.18.58.238/headers.php'
+    url = 'http://192.168.81.128/headers.php'
     r = requests.get(url, headers=headers)
 
     print("Status Code: ", r.status_code)
     print("Header: " + r.text)
     print(" ")
 
-
 class Webscraping:
     totalimages = 0
     print("---WebScraping---")
     print("List of Images: ")
-    Domain = "http://172.18.58.238/index.php"
-    url = "http://172.18.58.238/multi/img/"
+    Domain = "http://192.168.81.128/index.php"
+    url = "http://192.168.81.128/multi/img/"
     filetype = ".jpg"
 
     def get_soup(url):
